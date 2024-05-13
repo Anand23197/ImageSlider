@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ImageSlider from "./components/ImageSlider";
+import nine from "./images/19.jpeg";
+import bird from "./images/bird.jpg";
+import camera from "./images/camera.jpg";
+import flower from "./images/flower.PNG";
+import pond from "./images/pond.jpg";
+import tree from "./images/tree.jpg";
 
+const images = [nine, bird, camera, flower, pond, tree];
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ImageSlider images={images} />
     </div>
   );
 }
